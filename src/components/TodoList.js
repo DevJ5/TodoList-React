@@ -70,8 +70,7 @@ export default class TodoList extends Component {
 			todos = this.state.todos.filter(todo => todo.completed);
 
 		return (
-			<div>
-				<TodoForm onSubmit={this.addTodo} />
+			<div className="todo-list">
 				{todos.map(todo => (
 					<Todo
 						key={todo.id}
@@ -80,29 +79,32 @@ export default class TodoList extends Component {
 						deleteTodo={() => this.deleteTodo(todo.id)}
 					/>
 				))}
-				<div>
+				<div className="todos-left">
 					Todos left: {this.state.todos.filter(todo => !todo.completed).length}
 				</div>
-				<button value="all" onClick={this.updateTodoToShow}>
-					All
-				</button>
-				<button value="active" onClick={this.updateTodoToShow}>
-					Active
-				</button>
-				<button value="completed" onClick={this.updateTodoToShow}>
-					Completed
-				</button>
+				<div className="filter-buttons">
+					<button value="all" onClick={this.updateTodoToShow}>
+						All
+					</button>
+					<button value="active" onClick={this.updateTodoToShow}>
+						Active
+					</button>
+					<button value="completed" onClick={this.updateTodoToShow}>
+						Completed
+					</button>
+				</div>
 
 				{showDeleteAllButton && (
-					<div>
+					<div className="delete-completed">
 						<button onClick={this.deleteCompletedTodos}>
 							Delete Completed
 						</button>
 					</div>
 				)}
-				<div>
+				<div className="toggle-all">
 					<button onClick={this.toggleAll}>Toggle All</button>
 				</div>
+				<TodoForm onSubmit={this.addTodo} />
 			</div>
 		);
 	}

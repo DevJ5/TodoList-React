@@ -3,7 +3,7 @@ import React from 'react';
 export default function Todo(props) {
 	const { todo } = props;
 	return (
-		<div>
+		<div className="todo-item">
 			<span
 				style={{
 					textDecoration: todo.completed ? 'line-through' : null

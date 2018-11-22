@@ -2,10 +2,69 @@
 
 body {
   font-family: 'Orbitron';
+  margin-top: 60px;
 }
 
 .App {
+  width: 50%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.2), 0 6px 20px 0 rgba(0,0,0, 0.19);
+}
+
+form input {
+  display: inline-block;
+  width: 80%;
+  padding: 10px;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+form button {
+  width: 18%;
+  padding: 10px;
+  margin-left: 10px;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.todo-item:hover {
+  cursor: pointer;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.filter-buttons button {
+  width: 20%;
+  margin: 10px;
+  padding: 10px;
+  word-wrap: break-word;
+}
+
+.todos-left {
   text-align: center;
+}
+
+.toggle-all, .delete-completed {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.toggle-all button, .delete-completed button {
+  padding: 10px;
+  width: 20%;
+  word-wrap: break-word;
 }
 
 .completed {
