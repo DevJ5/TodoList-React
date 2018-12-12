@@ -2,9 +2,13 @@
 
 Practicing React in a simple crud application.
 
-``` html
-<!-- yarn install -->
-<!--- yarn start --->
+``` javascript
+
+// Install dependencies
+yarn install
+
+// Start the server
+yarn start
 ```
 
 
