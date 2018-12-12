@@ -1,6 +1,8 @@
 # Todo list
 
-Practicing different react features in a simple crud application.
+Simple CRUD application. This app uses React.
+
+> Goal: Practicing different React features.
 
 ---
 
