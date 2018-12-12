@@ -3,7 +3,7 @@
 Practicing React in a simple crud application.
 
 ```
-#yarn install
+// yarn install
 yarn start
 ```
 
