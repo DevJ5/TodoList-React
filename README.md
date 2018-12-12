@@ -2,6 +2,8 @@
 
 Practicing React in a simple crud application.
 
+---
+
 ``` javascript
 
 // Install dependencies
