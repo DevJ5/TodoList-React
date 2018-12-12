@@ -1,15 +1,15 @@
 # Todo list
 
-Practicing React in a simple crud application.
+Practicing different react features in a simple crud application.
 
 ---
 
-``` javascript
+``` bash
 
-// Install dependencies
+# Install dependencies
 yarn install
 
-// Start the server
+# Start the server
 yarn start
 ```
 
